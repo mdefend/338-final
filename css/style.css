@@ -10,6 +10,7 @@ ul {
   background-color:   #f3a5bf; 
   display: flex;
   align-items: stretch;
+  border-radius: 5px;
 }
 
 ul li a {
@@ -126,6 +127,7 @@ body {
 }
 #photobttn{
   position: relative;
+  margin-bottom: 15px;
 }
 .tester {
   position: absolute;
@@ -161,6 +163,30 @@ body .lb-data .lb-number {
   color: #3a2416;
 
  } 
+ .skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: none;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  background-color: #7796a6;
+}
+footer {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #a3ad71;
+  border-radius: 5px;
+}
   @media (min-width: 750px) {
     /*homepage*/
    .AboutMe{
@@ -199,6 +225,7 @@ body .lb-data .lb-number {
     }
     .frame{
   position: relative;
+  width: 100%;
  
 }
 .booth{

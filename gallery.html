@@ -13,6 +13,7 @@
 </head>
 <body>
     <header>
+        <a href="#main" class="skip">Skip to main content</a>
     <nav>
         <ul>
             <li><a href="./index.html"> Home</a></li> <!--note this will have problems when deployed-->
@@ -24,7 +25,7 @@
         <h2 class="gallerytitle">Tap on each photo for more information! </h2>
 </header>
     <main>
-        <div class="gallery">
+        <div id="main"class="gallery">
           
                <a href="./img/remy.JPG" target="_blank"  data-lightbox= "gallery"data-title="Remy" data-alt="Maggie's dog Remy">
             <img src="./img/remy.JPG" width="100" alt="Maggie's dog Remy" >
@@ -83,6 +84,10 @@
 
         </div>
     </main>
+    <footer>
+    <p>Maggie DeFend, 2025</p>
+    <p>Thank you for visting!</p>
+</footer>
     <!--<script src="js/main.js"></script>-->
      <script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>

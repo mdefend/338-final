@@ -1,0 +1,170 @@
+/* color ideas 
+
+purple   pink   lpink    tanpink    lightperi
+*/
+/*nav bar styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:   #f3a5bf; 
+  display: flex;
+  align-items: stretch;
+}
+
+ul li a {
+  display: block;
+  color: #3b2516;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+body {
+  box-sizing: border-box;
+    background-color: #f9f7f0; 
+    color: #3a2416;
+     font-family: "Montserrat", sans-serif;;
+}
+/*homepage*/
+.AboutMe{
+  background-color: #a3ad71;
+  display:flex; 
+  margin: 28px; 
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+
+.Cameras { 
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+}
+.Cameras > div { 
+  width: 85%;
+  height: 85%;
+  margin: 28px;
+  padding: 15px;
+}
+#cam1{
+   background-color:  #7796a6;
+    border-radius: 10px;
+}
+.pain1{ 
+  display: flex;
+  flex-direction: row;
+ 
+}
+.pain1 img { 
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+#cam2 { 
+  background-color: #f3a5bf;
+   border-radius: 10px;
+}
+/*gallery stuff*/
+.gallery{
+  display: grid; 
+   grid-template-columns: repeat(2, 1fr);
+   padding: 0px; 
+   
+
+}
+.gallery img {
+  width: 80%;
+ 
+}
+
+/*photobooth styling*/
+.photomain{
+   display: flex;
+  flex-direction: column;     
+   align-items: center;     
+  justify-content: center;     
+           
+  gap: 15px;        
+}
+.frame{
+  position: relative;
+  
+    width: 100%;      
+  height: 100%; 
+    object-fit: contain;
+}
+#photoframe{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  
+  
+}
+
+
+.booth {
+  position: absolute;
+  top: 179px;
+  left: 63px;
+  border: 1px solid black;
+ 
+}
+#photobttn{
+  position: relative;
+}
+.tester {
+  position: absolute;
+  top: 179px;
+  left: 63px;
+  border: 1px solid black;
+
+}
+canvas{display: none;}
+  @media (min-width: 750px) {
+    /*homepage*/
+   
+    .Cameras div {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+      #cam1{
+    max-width: 80%;
+  }
+.pain1{ 
+  display: flex;
+ 
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  
+}
+/*gallery*/
+    .gallery{
+       grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr); 
+      gap: 10px 10px; 
+      
+    }
+    .gallery img { 
+      width: 100%; 
+      border: 5px solid white;
+      border-bottom: 20px solid white;
+    }
+    .gallerytitle { 
+      text-align: center;
+    }
+    .frame{
+  position: relative;
+ 
+}
+
+
+  } 
+
+  

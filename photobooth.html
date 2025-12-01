@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhotoBooth</title>
+    <title>Camera Simulator</title>
      <link rel="stylesheet" href="css/style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="./img/Camera2.png">
 
 </head>
 <body>
     <header>
     <nav>
         <ul>
-            <li><a href="/index.html"> Home</a></li> <!--note this will have problems when deployed-->
-            <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="/photobooth.html">Photo Booth</a></li>
+            <li><a href="./index.html"> Home</a></li> <!--note this will have problems when deployed-->
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./photobooth.html">Camera Simulator</a></li>
         </ul>
         <!--Things Needed Here -> video, canvas -->
 
@@ -24,7 +25,7 @@
 </header>
 <main class="photomain">
     <h1>Digital Camera Simulator</h1>
-    <h2>Try taking a digital camera photo yourself!</h2>
+    <h2>Try taking a digital camera photo!</h2>
     <div class="frame">
        <video class="booth" muted width="460" height="328"></video>
        <!--for some reason this literally only works this way -->
@@ -32,7 +33,7 @@
         <canvas class="finalphoto"></canvas>
        </div>
        
-      <button id="photobttn">click me</button>
+      <button id="photobttn">Take Photo!</button>
 </main>
  <script src="js/photobooth.js"></script>
 </body>

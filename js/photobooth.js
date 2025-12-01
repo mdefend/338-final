@@ -18,8 +18,8 @@ function setupCamera(){
 function putOnCanvas(){
 let width = video.clientWidth
 let height = video.clientHeight
-canvas.width = video.width
-canvas.height = video.height
+canvas.width = width
+canvas.height = height
   return setInterval(() => {
     context.drawImage(video, 0, 0, width, height)
   }, 16) 
@@ -35,7 +35,9 @@ function takePhoto(){
     video.play();
     let img = video.previousSibling;
     img.remove();
-     photobttn.innerHTML = "Take Photo";
+     photobttn.innerHTML = "Take Photo!";
+     photobttn.alt = "Take Photo!"
+     photobttn.style.backgroundColor = "#a3ad71;";
 
   } else{
    let data = canvas.toDataURL('image/jpeg')
@@ -49,7 +51,9 @@ function takePhoto(){
     img.style.height = canvas.height + "px";
     img.className = "tester";
      video.parentNode.insertBefore(img, video);
-     photobttn.innerHTML = "Redo!";
+     photobttn.innerHTML = "Retake Photo!";
+     photobttn.style.backgroundColor = "#7796a6;";
+     photobttn.alt = "Retake Photo!"
   }
    
 }
